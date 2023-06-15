@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Team Meeting Notes</title>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Kyle Smith">
+    <meta name="description" content="Fitness App Meeting Notes #3 Brainstorm">
+    <link rel="icon" href="images/appFavicon.svg">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Team Meeting Minutes #3: Fitness App Brainstorm
+      </h1>
+      <h3>
+        Date: 04/30/23
+      </h3>
+      <h2>
+        Table of Contents:
+      </h2>
+      <nav class="crumbs">
+        <a href="#Attendance">Attendance</a>
+        <a href="#Agenda">Agenda  </a>
+        <a href="#discussion">Discussion </a>
+        <a href="#sample">Sample App Registration</a>
+    </nav>
+    <hr>
+    </header>
+    <main>
+      <section id="Attendance">
+          <h2>Attendance List</h2>
+            <ul>
+              <li>Kyle Smith</li>
+              <li>Daniel Kim</li>
+              <li>Sarah Henry</li>
+              <li>Tyler Casey</li>
+              <li>Darren Li</li>
+              <li>Trish Prather</li>
+            </ul>
+      </section>
+      <hr>
+      <section>
+        <div id="Agenda">
+          <h2>Meeting Agenda</h2>
+          <ol>
+            <!--NOTE: Span could have a link to previous meeting notes-->
+            <li>Review main points from <span><a href="previous-notes.html" target="_blank">previous meeting</a></span>, mainly fitness app motivation</li>
+            <li>App building, which <b class="term">important</b> features to implement first</li>
+            <li>Fitness <i>areas/communities</i> to focus on</li>
+            <li>Group <em>Comments/Questions/Concerns</em> to bring up</li>
+            <li><strong>Design app user registrion form</strong></li>
+          </ol>
+        </div>
+      </section>
+      <hr>
+    
+      <section id="discussion">
+      <h2>Discuss unfinished topics from previous meeting</h2>
+          <ol>
+            <li>Finish discussing unique goals of the app</li>
+            <li>Finish discussing which goals to focus on this month</li>
+          </ol>
+      <hr>
+
+      <h2>This meeting discussion topics</h2>
+            <ul>
+              <li>Introduce new team members</li>
+              <li>Discuss app registration page key features</li>
+              <li>Implement a basic app registration page</li>
+            </ul>
+      <hr>
+
+      <h2>Additional Questions/Concerns</h2>
+            <ul>
+              <li>Concern: We should focus on brainstorming how we are difficult from incumbent fitness apps.</li>
+              <li>Question: How do new team members get access to repo?</li> 
+              <li>TODO: Need to share document for developer onboarding with new team members. </li>
+              <li>Question: Do we want to focus on IOS or Android first, or both concurrently?</li>
+            </ul>
+      <hr>
+
+      <h3>App Registration Design Discussion</h3>
+      <div>
+      <p>This section would include any notes about the design of our app registration page</p>
+      <h4>Images of other fitness app registration pages.</h4>
+      <br>
+        <details>
+          <summary>MyFitnessPal</summary>
+          <figure>
+            <figcaption>MyFitnessPal's Login Page</figcaption>
+            <img class="registration-picture"
+               src="screenshots/myFitPalRegistration.png"
+               alt="Login page for MyFitnesPal App"
+               width="300"
+               height="300">
+        </figure>
+        </details>
+        <br>
+        <details>
+          <summary>Strava</summary>
+          <figure>
+            <figcaption>Strava's Signup Page</figcaption>
+            <img class="registration-picture"
+               src="screenshots/stravaRegistration.png"
+               alt="Signup page for Strava App"
+               width="300"
+               height="300">
+        </figure>
+        </details>
+        <br>
+        <details>
+          <summary>Nike Training Club</summary>
+          <figure>
+            <figcaption>Nike's Signup Page</figcaption>
+            <img class="registration-picture"
+               src="screenshots/nike-signup.png"
+               alt="Signup page for Nike Training Club App"
+               width="300"
+               height="300">
+        </figure>
+        </details>
+      </div>
+      <hr>
+      </section>
+
+      <section id="recording">
+      <h2>Video and Audio Recording for Meeting</h2>
+        <details>
+          <summary>Audio recording of this meeting</summary>
+          <figure>
+            <figcaption>Today's Meeting Audio</figcaption>
+            <audio
+                controls
+                src="media/meeting-audio.m4a">
+            </audio>
+        </figure>
+        </details>
+        <br>
+  
+        <details>
+          <summary>Video recording of this meeting:</summary>
+          <video controls width="250">
+            <source src="media/meeting-recording.mp4" type="video/mp4">
+        </video>
+        </details>
+      </section>
+      <hr>
+      <br>
+
+    <section id="sample">
+    <form>
+    <fieldset>
+
+    <h1>Sample App Registration Form:</h1>
+    <form action="" method="get" class="registration-form">
+      <div class="form-firstName">
+        <label for="name">Enter your first name: </label>
+        <input type="text" name="name" id="name" required>
+      </div>
+      <br>
+      <div class="form-lastName">
+        <label for="name">Enter your last name: </label>
+        <input type="text" name="name" id="name" required>
+      </div>
+      <br>
+
+      <div>
+      <label for="start">Birthdate:</label>
+       <input type="date" id="bday" name="bday"
+       value="2020-05-07"
+       min="1900-01-01" max="2005-12-31">
+      </div>
+      <br>
+
+      <div class="form-email">
+        <label for="email">Enter your email address: </label>
+        <input type="email" name="email" id="email" required>
+      </div>
+      <br>
+
+      <!--Select a username for the app-->
+      <div>
+      <label for="name">Create a username (4 to 12 characters):</label>
+      <input type="text" id="name" name="name" required
+       minlength="4" maxlength="12" size="15">
+      </div>
+      <br>
+
+      <form>
+        <fieldset>
+          <legend>How many hours per week do you currently spend exercising?</legend>
+      
+          <input type="radio" id="min" name="exercise" value="min">
+          <label for="min">Less than 2 hours</label><br>
+      
+          <input type="radio" id="mid" name="exercise" value="mid">
+          <label for="mid">2-4 hours</label><br>
+
+          <input type="radio" id="upper" name="exercise" value="upper">
+          <label for="upper">5-10 hours</label><br>
+
+          <input type="radio" id="high" name="exercise" value="high">
+          <label for="high">Greater than 10 hours</label>
+        </fieldset>
+      </form>
+      <br>
+
+      <fieldset>
+          <legend>What are your fitness goals?</legend>
+          <div>
+            <input type="checkbox" id="weightLoss" name="fitness" checked>
+            <label for="weightLoss">Weight Loss</label>
+          </div>
+      
+          <div>
+            <input type="checkbox" id="muscleGain" name="fitness">
+            <label for="muscleGain">Gain Muscle</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="conditioning" name="fitness">
+            <label for="conditioning">Increase Cardiovascular Fitness</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="strength" name="fitness">
+            <label for="strength">Increase Strength</label>
+          </div>
+
+      </fieldset>
+    <br>
+     
+    <!--Fitness Goal Priority-->
+    <div>
+    <label for="fitness-goal-choices">My most important (primary) fitness goal is: </label>
+    <input list="fitness-goals" id="fitness-goal-choices" name="fitness-goal-choices">
+    <datalist id="fitness-goals">
+        <option value="Weight Loss">
+        <option value="Muscle Gain">
+        <option value="Increase Cardiovascular Fitness">
+        <option value="Increase Strength">
+    </datalist>
+    </div>
+    <br>
+ 
+    <fieldset>
+        <legend>Select your fitness coach:</legend>
+        <div>
+          <input type="radio" id="matt" name="drone" value="Matt"
+                 checked>
+          <label for="matt">Matt</label>
+        </div>
+    
+        <div>
+          <input type="radio" id="kim" name="drone" value="Kim">
+          <label for="Kim">Kim</label>
+        </div>
+    
+        <div>
+          <input type="radio" id="sarah" name="drone" value="Sarah">
+          <label for="sarah">Sarah</label>
+        </div>
+    
+        <div>
+          <input type="radio" id="dennis" name="drone" value="Dennis">
+          <label for="dennis">Dennis</label>
+        </div>
+    </fieldset>
+    <br>
+
+    <div id="bio">
+    <!-- App bio -->
+    <legend>Create a user profile bio for the app:</legend>
+    <textarea id="bio" name="bio"
+              rows="10" cols="100">
+    </textarea>
+    </div>
+    <br>
+
+    <div id="advertising">
+    <label for="option-select">How did you hear about us?</label>
+    <select id="option-select">
+        <option value="">--Please choose an option--</option>
+        <option value="friend">Friend/Family Referral</option>
+        <option value="media">Social Media (Facebook/Twitter/Instagram)</option>
+        <option value="search">Search Engine</option>
+        <option value="other">Other</option>
+    </select>
+    </div>
+    <br>
+
+    <button class="submit-button" type="button">
+        Complete Registration
+    </button>
+
+    </fieldset>
+    </form>
+    </section>
+
+</main>
+    <footer>
+      <p>© 2023 ZeusFitness</p>
+    </footer>
+  </body>
+</html>
